@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "saroptreg_models"
+version = "1.0.0"
+description = "SAROPT Registration Models"
+authors = [
+    { name = "Simon Bertrand", email = "simonbertrand.contact@gmail.com" },
+]
+maintainers = [
+    { name = "Simon Bertrand", email = "simonbertrand.contact@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "earth-observation",
+    "dataset",
+    "torch", "machine-learning", "deep-learning", 
+    "image-registration", 
+    "MEOW",
+
+]
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = [
+    "torch","torchvision", 
+    "torch_crosscorr @ git+ssh://git@github.com/Simon-Bertrand/FastCrossCorr-PyTorch",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/Simon-Bertrand/MEOW-Dataset"
+Repository = "https://github.com/Simon-Bertrand/MEOW-Dataset"
+
+[tool.setuptools.packages.find]
+include = ["saroptreg_models"]
